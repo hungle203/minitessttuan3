@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="display"></h1>
+<p id="display2"></p>
+<p id="display3"></p>
+<script>
+    let number = +prompt("Nhập vào số lượng phần tử");
+    let array = new Array(number);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt("Nhập vào phần tử thứ" + (i + 1));
+           if (array[i] % 3 === 0) {
+                  document.getElementById("display").innerText = "C1021H1"
+           }else if (array[i] % 5 === 0 ) {
+                  document.getElementById("display2").innerText = "HelloWorld"</i>
+
+           }else {
+               document.getElementById("display3").innerText = "CodeGym"
+           }
+
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

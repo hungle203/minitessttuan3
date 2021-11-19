@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập vào số lượng phần tử");
+    let array = new Array(number);
+    let count = 0
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt("Nhập vào phần tử thứ" + (i + 1));
+       if (array[i] % 3 === 0) {
+           count ++
+           alert("số lượng phần tử chia hết cho 3 là" + count)
+       }else {
+           alert("-1")
+       }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
