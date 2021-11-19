@@ -6,15 +6,15 @@
 </head>
 <body>
 <script>
-    let arr2 = [2, 4, 6, 7, 10];
     let number = +prompt("Nhập vào số lượng phần tử");
     let array = new Array(number);
     let count = 0;
     for (let i = 0; i < array.length; i++) {
         array[i] = prompt("Nhập vào phần tử thứ" + (i + 1));
-        if (array[i] === arr2[i]) {
-            count ++
-        }console.log("số phần tử giống nhau" + typeof count)
+        let input = +prompt("Nhập vào giá trị bất kỳ")
+        if (input === array[i]) {
+            count ++;
+        }console.log("số phần tử giống nhau" +  count)
 
     }
 
