@@ -8,15 +8,23 @@
 <script>
     let number = +prompt("Nhập vào số lượng phần tử");
     let array = new Array(number);
-    let sum;
-    let number = 2
-    let SNT = 0
     for (let i = 0; i < array.length; i++) {
-        array[i] = prompt("Nhập vào phần tử thứ" + (i + 1));
-        for (let j = 2; j <= Math.sqrt(number); j++) {
-                if (number < 200) {
+        array[i] = prompt("Nhập số lượng phần tử thứ" + (i+1));
+      }
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] >= 2 && array[i] < 200) {
+            for ( let j = 2; j <array[i] ; j++) {
+                if (array[i] % j !== 0) {
+                    sum += array[i]
+                }
+            }
         }
-        }
+    }
+    document.write("Tổng của" + number + "số trong mảng là" + sum)
+
+        
+
 </script>
 </body>
 </html>
